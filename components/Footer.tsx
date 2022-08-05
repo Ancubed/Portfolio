@@ -2,7 +2,8 @@ import type { FunctionComponent } from 'react'
 
 const FooterWrapper: FunctionComponent = () => {
     return (
-      <footer>
+      <footer className=''>
+          Футер
       </footer>
     )
   }

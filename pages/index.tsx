@@ -2,9 +2,12 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = () => {
   return (
-    <>
-      Контент
-    </>
+    <div className=''>
+
+      <div>Контент</div>
+      <div>Контент</div>
+      
+    </div>
   )
 }
 
