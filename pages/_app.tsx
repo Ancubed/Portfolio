@@ -8,11 +8,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <>
       <Head />
 
-      <main className=''>
+      <main className='z-10 absolute text-white font-sans'>
         <Component {...pageProps} />
       </main>
 
-      <Footer />
+      <Footer className='z-10 hidden bottom-20 absolute text-white font-sans sm:flex sm:inset-x-1/2 sm:-translate-x-[50px] lg:transform-none lg:inset-x-auto lg:right-36'/>
 
       <Background />
   </>
