@@ -1,14 +1,14 @@
+import { animated } from '@react-spring/three'
+
 import Circles from "./Circles"
 import Sphere from "./Sphere"
 
-import config from './blackHoleConfig.json'
-
 function BlackHole({ position, rotation, scale }) {
     return (
-        <mesh position={position} rotation={rotation} scale={scale}>
+        <animated.mesh position-x={position.x} position-y={position.y} position-z={position.z} rotation={rotation} scale={scale}>
             <Sphere />
             <Circles />
-        </mesh>
+        </animated.mesh>
     );
 }
   

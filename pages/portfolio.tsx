@@ -2,7 +2,7 @@ import React from 'react'
 
 import type { NextPage } from 'next'
 
-const Home: NextPage = () => {
+const Portfolio: NextPage = () => {
   return (
     <div className='flex flex-col'>
       
@@ -10,4 +10,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Portfolio

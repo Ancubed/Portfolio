@@ -3,7 +3,7 @@ import { useFrame, useLoader } from '@react-three/fiber'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 import * as THREE from 'three'
 
-import config from './blackHoleConfig.json'
+import { animated } from '@react-spring/three'
 
 function Astronaut({ position, rotation, scale }) {
     const gltf = useLoader(GLTFLoader, 'textures/astronaut/scene.gltf')
@@ -22,10 +22,10 @@ function Astronaut({ position, rotation, scale }) {
     })
 
     return (
-        <Suspense fallback={null} >
-            <mesh position={position} rotation={rotation} scale={scale}>
+        <Suspense fallback={<h1>Loading profile...</h1>} >
+            <animated.mesh position-x={position.x} position-y={position.y} position-z={position.z} rotation={rotation} scale={scale}>
                 <primitive object={gltf.scene} />
-            </mesh>
+            </animated.mesh>
         </Suspense>
     );
 }
