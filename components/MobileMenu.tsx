@@ -1,8 +1,9 @@
 import classNames from 'classnames'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import { useSpring, useTransition, animated } from 'react-spring'
+
 import type { FunctionComponent } from 'react'
 
 import Link from 'next/link'
@@ -27,7 +28,7 @@ const MobileMenu: FunctionComponent<DefaultProp>  = ({ className } : DefaultProp
         }
     })
     
-    const mobileMenuItemsStyles = useSpring({
+    const mobileMenuNavStyles = useSpring({
         display: isOpen ? 'flex' : 'none',
         delay: 100,
         config: {
@@ -43,16 +44,16 @@ const MobileMenu: FunctionComponent<DefaultProp>  = ({ className } : DefaultProp
                     item && 
                     <animated.div style={mobileMenuStyles} className={classNames(className, 'w-full h-screen flex flex-col items-center bg-black py-20 justify-between')}>
                         <AncubedLogo />
-                        <nav className='flex flex-col items-center font-light text-3xl -my-5'>
+                        <animated.nav style={ mobileMenuNavStyles } className='flex flex-col items-center font-light text-3xl -my-5'>
                             {navItems.map(item => 
                                 router.pathname != item.href 
                                 ?
                                 <Link href={item.href} key={item.id} >
-                                    <animated.a style={ mobileMenuItemsStyles} className='my-5' onClick={() => setIsOpen(false)}>{item.title}</animated.a>
+                                    <a className='my-5' onClick={() => setIsOpen(false)}>{item.title}</a>
                                 </Link>
-                                : <animated.span style={ mobileMenuItemsStyles } key={item.id} className='my-5 border-b'>{item.title}</animated.span>
+                                : <span key={item.id} className='my-5 border-b'>{item.title}</span>
                             )}
-                        </nav>
+                        </animated.nav>
                         <button className='font-light text-3xl' onClick={() => setIsOpen(false)}>
                             Close
                         </button>
