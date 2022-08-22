@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const FooterWrapper: FunctionComponent = () => {
     return (
-        <Link href='https://github.com/Ancubed'>
+        <Link href='https://github.com/ancubed'>
             <a target='_blank' className='flex flex-col items-center lg:items-end'>
                 <span className='text-2xl leading-[28px] font-light whitespace-nowrap'>Powered by</span>
                 <div className='flex items-start font-bold'>
