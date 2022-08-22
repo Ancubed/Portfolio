@@ -15,7 +15,7 @@ const Menu: FunctionComponent<DefaultProp> = ({ className }: DefaultProp) => {
   const router = useRouter()
 
   return (
-    <nav className={classNames(className, 'font-light text-3xl -mx-6')}>
+    <nav className={classNames(className, 'font-light text-3xl')}>
       {navItems.map(item =>
         router.pathname != item.href
           ?
