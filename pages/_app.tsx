@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return <>
       <Head />
 
-      <header className='z-50 absolute w-full select-none text-white font-sans lg:w-fit lg:-mx-6'>
+      <header className='z-50 absolute w-full select-none text-white font-sans lg:w-fit'>
           <Menu className='hidden sm:relative sm:top-20 sm:flex sm:justify-center sm:w-full lg:w-min lg:inset-x-36'/>
           <MobileMenu className='sm:hidden'/>
       </header>
