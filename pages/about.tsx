@@ -1,12 +1,16 @@
+import classnames from 'classnames'
 
+import React from 'react'
 import type { NextPage } from 'next'
 
-const Portfolio: NextPage = () => {
-  return (
-    <div className='flex flex-col'>
+import { DefaultProp } from '../types/types'
 
+const About: NextPage = ({ className } : DefaultProp) => {
+  return (
+    <div className={classnames(className, '')}>
+      About
     </div>
   )
 }
 
-export default Portfolio
+export default About

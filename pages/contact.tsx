@@ -1,13 +1,16 @@
-import React from 'react'
+import classnames from 'classnames'
 
+import React from 'react'
 import type { NextPage } from 'next'
 
-const Portfolio: NextPage = () => {
+import { DefaultProp } from '../types/types'
+
+const Contact: NextPage = ({ className } : DefaultProp) => {
   return (
-    <div className='flex flex-col'>
-      
+    <div className={classnames(className, '')}>
+      Contact
     </div>
   )
 }
 
-export default Portfolio
+export default Contact
