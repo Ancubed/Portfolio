@@ -1,22 +1,26 @@
 const navItems = [{
     id: 1,
     href: '/',
-    title: 'Main'
+    title: 'Main',
+    rusTitle: 'Главная'
 },
 {
     id: 2,
     href: '/portfolio',
-    title: 'Portfolio'
+    title: 'Portfolio',
+    rusTitle: 'Портфолио'
 },
 {
     id: 3,
     href: '/about',
-    title: 'About'
+    title: 'About',
+    rusTitle: 'Обо мне'
 },
 {
     id: 4,
     href: '/contact',
-    title: 'Contact'
+    title: 'Contact',
+    rusTitle: 'Контакты'
 }]
 
 export default navItems

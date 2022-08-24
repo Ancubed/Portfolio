@@ -11,8 +11,11 @@ import { DefaultProp } from '../types/types'
 
 import navItems from '../constants/navItems'
 
+import useLangStore from '../hooks/useLangStore'
+
 const Menu: FunctionComponent<DefaultProp> = ({ className }: DefaultProp) => {
   const router = useRouter()
+  const enLang = useLangStore((store) => store.enLang)
 
   return (
     <nav className={classNames(className, 'font-light text-3xl lg:-mx-6')}>
@@ -20,9 +23,9 @@ const Menu: FunctionComponent<DefaultProp> = ({ className }: DefaultProp) => {
         router.pathname != item.href
           ?
           <Link href={item.href} key={item.id}>
-            <a className='mx-6'>{item.title}</a>
+            <a className='mx-6'>{enLang ? item.title : item.rusTitle}</a>
           </Link>
-          : <span key={item.id} className='mx-6 border-b'>{item.title}</span>
+          : <span key={item.id} className='mx-6 border-b'>{enLang ? item.title : item.rusTitle}</span>
       )}
     </nav>
   )

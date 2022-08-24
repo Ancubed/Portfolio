@@ -14,8 +14,11 @@ import AncubedLogo from '../components/AncubedLogo'
 
 import navItems from '../constants/navItems'
 
+import useLangStore from '../hooks/useLangStore'
+
 const MobileMenu: FunctionComponent<DefaultProp>  = ({ className } : DefaultProp) => {
     const router = useRouter()
+    const enLang = useLangStore((store) => store.enLang)
     const [isOpen, setIsOpen] = useState(false)
 
     const mobileMenuTransition = useTransition(isOpen, { 
@@ -49,20 +52,20 @@ const MobileMenu: FunctionComponent<DefaultProp>  = ({ className } : DefaultProp
                                 router.pathname != item.href 
                                 ?
                                 <Link href={item.href} key={item.id} >
-                                    <a className='my-5' onClick={() => setIsOpen(false)}>{item.title}</a>
+                                    <a className='my-5' onClick={() => setIsOpen(false)}>{enLang ? item.title : item.rusTitle}</a>
                                 </Link>
-                                : <span key={item.id} className='my-5 border-b'>{item.title}</span>
+                                : <span key={item.id} className='my-5 border-b'>{enLang ? item.title : item.rusTitle}</span>
                             )}
                         </animated.nav>
                         <button className='font-light text-3xl' onClick={() => setIsOpen(false)}>
-                            Close
+                            {enLang ? 'Close' : 'Закрыть'}
                         </button>
                     </animated.div>
                 )
             }
             {   !isOpen &&
                 <button className='font-light text-3xl w-full justify-center mt-10' onClick={() => setIsOpen(true)}>
-                    Menu
+                    {enLang ? 'Menu' : 'Меню'}
                 </button>
             }
         </div>
