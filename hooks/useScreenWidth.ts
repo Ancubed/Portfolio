@@ -14,7 +14,7 @@ function getWindowDimensions() {
     }
 }
 
-export default function useIsLg() {
+export default function useScreenWidth() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
@@ -26,5 +26,5 @@ export default function useIsLg() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  return windowDimensions.width > 1023;
+  return { isLg: windowDimensions.width > 1023, isMd: windowDimensions.width > 767 };
 }

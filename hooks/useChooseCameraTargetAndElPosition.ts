@@ -1,12 +1,9 @@
-import { useRouter } from 'next/router'
 import { useSpring, easings } from 'react-spring'
 
-export default function useChooseCameraTargetAndElPosition() {
-    const router = useRouter()
-  
+export default function useChooseCameraTargetAndElPosition(pathname : string) {
     let blackHolePositionTo, blackHolePositionFrom, starsRotationTo, starsRotationFrom, astronautPositionTo, astronautPositionFrom
 
-    switch(router.pathname) {
+    switch(pathname) {
       case '/about': 
         blackHolePositionFrom = { x: 0, y: 0, z: 0 }
         blackHolePositionTo = { x: 10, y: 0, z: 10 }
