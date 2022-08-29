@@ -24,6 +24,16 @@ export default function useChooseCameraTargetAndElPosition(pathname : string) {
         astronautPositionFrom= { x: -10, y: -5.2, z: 0 }
         astronautPositionTo = { x: -10, y: -5.2, z: 0 }
         break
+      case '/contact': 
+        blackHolePositionFrom = { x: 0, y: 0, z: 0 }
+        blackHolePositionTo = { x: 10, y: 0, z: 10 }
+
+        starsRotationFrom= { x: 0, y: 0.9, z: 0 }
+        starsRotationTo = { x: 0, y: 1, z: 0 }
+
+        astronautPositionFrom= { x: -10, y: -5.2, z: 0 }
+        astronautPositionTo = { x: -10, y: -5.2, z: 0 }
+        break
       default:
         blackHolePositionFrom = { x: 5, y: 0, z: 0 }
         blackHolePositionTo = { x: 2.7, y: 0, z: -0.2 }
