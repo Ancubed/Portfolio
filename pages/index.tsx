@@ -53,7 +53,7 @@ const Home: NextPage = ({ className }: DefaultProp) => {
         <animated.h1 style={nameStyles} className='w-max text-[40px] leading-10 font-bold sm:text-[64px] lg:text-8xl sm:leading-[74px] lg:leading-[110px]'>
           {enLang ? 'Andrew Antonov' : 'Андрей Антонов'}
         </animated.h1>
-        <animated.span style={postStyles} className='text-[32px] font-light sm:text-4xl lg:text-[40px]'>
+        <animated.span style={postStyles} className='w-max text-[32px] font-light sm:text-4xl lg:text-[40px]'>
           {enLang ? 'Fullstack developer' : 'Fullstack-разработчик'}
         </animated.span>
       </div>
