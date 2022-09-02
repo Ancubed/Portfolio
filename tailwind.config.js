@@ -6,7 +6,7 @@ module.exports = {
     "./blackhole/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {}
   },
   plugins: [],
 }
