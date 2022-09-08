@@ -9,10 +9,11 @@ import { DefaultProp } from '../types/types'
 
 import useLangStore from '../hooks/useLangStore'
 
-const plugsForFormItems = [0, 1, 2, 3, 4, 5]
+const plugsForFormItems = [0, 1, 2, 3, 4, 5] // Заглушки для анимаций
 
 const Contact: NextPage = ({ className }: DefaultProp) => {
   const enLang = useLangStore((store) => store.enLang)
+
   const [success, setSuccess] = useState(false)
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
