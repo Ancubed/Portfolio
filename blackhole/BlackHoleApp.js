@@ -17,7 +17,7 @@ function BlackHoleApp({ pathname }) {
     <div className='w-full h-full'>
       <Canvas style={{ background: "black" }} linear camera={{ fov: 40 }}>
         <ambientLight intensity={2} />
-        <OrbitControls
+        {screenWidth.isMd && <OrbitControls
           makeDefault
           minAzimuthAngle={screenWidth.isLg ? -0.2 : -0.1}
           maxAzimuthAngle={screenWidth.isLg ? 0.15 : 0.1}
@@ -29,7 +29,7 @@ function BlackHoleApp({ pathname }) {
           enablePan={false}
           zoomSpeed={0.2}
           target={cameraTarget}
-        />
+        />}
         <Stars rotation={starsRotation} />
         {screenWidth.isLg 
         && <Astronaut position={astronautPosition} rotation={astronautRotation} scale={1.5} />}
