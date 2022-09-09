@@ -58,7 +58,7 @@ const Portfolio: NextPage = ({ className }: DefaultProp) => {
     <div
       className={classnames(
         className,
-        "top-16 -my-10 overflow-y-scroll oveflow-x-hidden h-[90vh] no-scrollbar sm:h-[70vh] sm:overflow-x-hidden sm:top-48 sm:left-1/2 sm:-translate-x-2/4 sm:max-w-lg lg:left-36 lg:translate-x-0 lg:top-52"
+        "top-16 -my-10 overflow-y-scroll oveflow-x-hidden h-[90vh] no-scrollbar sm:h-[55vh] sm:overflow-x-hidden sm:top-48 sm:left-1/2 sm:-translate-x-2/4 sm:max-w-lg lg:left-36 lg:translate-x-0 lg:top-52"
       )}
     >
       {portfolioWorks.map((work) => (

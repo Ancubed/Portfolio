@@ -39,7 +39,7 @@ const About: NextPage = ({ className }: DefaultProp) => {
     <div
       className={classnames(
         className,
-        "top-16 overflow-y-scroll oveflow-x-hidden h-[90vh] no-scrollbar sm:h-[70vh] sm:overflow-x-hidden sm:top-48 sm:left-1/2 sm:-translate-x-2/4 sm:max-w-lg lg:max-w-4xl lg:left-auto lg:right-36 lg:translate-x-0 lg:top-52 xl:flex"
+        "top-16 overflow-y-scroll oveflow-x-hidden h-[90vh] no-scrollbar sm:h-[60vh] sm:overflow-x-hidden sm:top-48 sm:left-1/2 sm:-translate-x-2/4 sm:max-w-lg lg:max-w-4xl lg:left-auto lg:right-36 lg:translate-x-0 lg:top-52 xl:flex"
       )}
     >
       <div className="-mt-10 lg:max-w-[542px]">
@@ -115,7 +115,7 @@ const About: NextPage = ({ className }: DefaultProp) => {
           </animated.div>
         </div>
       </div>
-      <div className="my-10 lg:ml-24 lg:my-0">
+      <div className="my-10 xl:ml-24 lg:my-0">
         <animated.h1
           style={titlesSprings[6]}
           className="font-bold text-[32px] leading-[37px]"
