@@ -26,12 +26,12 @@ function MyApp({ Component, pageProps }: AppProps) {
 
         <Component {...pageProps} className='z-40 absolute left-auto w-full p-11 select-none text-white font-sans sm:p-0 lg:w-fit lg:left-36 lg:block' />
 
-        <footer className={`${router.pathname != '/' ? 'hidden ' : ''}z-40 absolute top-24 inset-x-1/2 translate-x-[3px] select-none text-white font-sans sm:bottom-20 sm:top-auto sm:flex sm:-translate-x-[67px] lg:right-36 lg:transform-none lg:inset-x-auto`}>
+        <footer className={`${router.pathname != '/' ? 'hidden ' : ''}z-40 absolute top-24 inset-x-1/2 translate-x-[3px] select-none text-white font-sans sm:bottom-20 sm:top-auto lg:flex lg:-translate-x-[62px] lg:right-36 lg:transform-none lg:inset-x-auto`}>
             <AncubedLogo />
         </footer>
 
 
-        <LangChanger className='z-40 absolute bottom-5 text-white font-sans inset-x-1/2 -ml-[20px] sm:-ml-[20px] lg:-ml-[10px]' />
+        <LangChanger className='z-40 absolute bottom-5 text-white text-center font-sans inset-x-1/2 -translate-x-2/4 bg-black rounded-full w-8' />
 
         <Background pathname={router.pathname}/>
     </>

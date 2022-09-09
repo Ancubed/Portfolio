@@ -12,7 +12,7 @@ export default function useChooseCameraTargetAndElPosition(pathname : string) {
         starsRotationTo = { x: 0, y: 3.14, z: 0 }
 
         astronautPositionFrom= { x: -10, y: -5.2, z: 0 }
-        astronautPositionTo = { x: -1.6, y: -5.2, z: 1 }
+        astronautPositionTo = { x: -1.9, y: -5.2, z: 1 }
         break
       case '/portfolio': 
         blackHolePositionFrom = { x: 0, y: 0, z: 0 }

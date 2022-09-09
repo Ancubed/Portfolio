@@ -1,7 +1,7 @@
 import classnames from 'classnames'
 
 import React from 'react'
-import { useSpring, useSprings, animated } from 'react-spring'
+import { useSpring, animated } from 'react-spring'
 import type { NextPage } from 'next'
 
 import { DefaultProp } from '../types/types'
@@ -55,7 +55,7 @@ const Portfolio: NextPage = ({ className } : DefaultProp) => {
   })
 
   return (
-    <div className={classnames(className, 'top-16 -my-10 overflow-y-scroll oveflow-x-hidden h-[90vh] no-scrollbar sm:h-[70vh] sm:overflow-x-hidden sm:top-40 sm:left-1/2 sm:-translate-x-2/4 sm:max-w-lg lg:left-36 lg:translate-x-0 lg:top-56')}>
+    <div className={classnames(className, 'top-16 -my-10 overflow-y-scroll oveflow-x-hidden h-[90vh] no-scrollbar sm:h-[70vh] sm:overflow-x-hidden sm:top-48 sm:left-1/2 sm:-translate-x-2/4 sm:max-w-lg lg:left-36 lg:translate-x-0 lg:top-52')}>
       {portfolioWorks.map(work => 
         <div key={work.id} className='my-10'>
           <div>
