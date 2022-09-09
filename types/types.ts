@@ -1,8 +1,8 @@
 export interface DefaultProp {
-    className?: string
+  className?: string;
 }
 
 export interface DefaultResponce {
-    success: boolean,
-    data: object | null
+  success: boolean;
+  data: object | null;
 }

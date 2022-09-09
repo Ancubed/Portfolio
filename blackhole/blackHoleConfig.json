@@ -1,7 +1,7 @@
 {
-    "starsRotationSpeed": 0.00005,
-    "circlesRotationSpeed": 0.002,
-    "lightsRotationSpeed": 0.003,
+  "starsRotationSpeed": 0.00005,
+  "circlesRotationSpeed": 0.002,
+  "lightsRotationSpeed": 0.003,
 
-    "background": false
+  "background": false
 }
