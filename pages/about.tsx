@@ -1,7 +1,7 @@
 import classnames from "classnames";
 
 import React from "react";
-import { useSpring, useSprings, animated } from "react-spring";
+import { useSprings, animated } from "react-spring";
 import type { NextPage } from "next";
 
 import { DefaultProp } from "../types/types";
