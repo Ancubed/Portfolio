@@ -17,7 +17,7 @@ const HeadWrapper: FunctionComponent = () => {
       <meta property="og:description" content="Fullstack developer" />
       <meta
         property="og:image"
-        content="https://portfolio.ancubed.me/images/background.png"
+        content="https://portfolio.ancubed.me/images/og-image.png"
       />
     </Head>
   );
