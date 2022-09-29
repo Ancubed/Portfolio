@@ -2,7 +2,7 @@ import "../styles/globals.css";
 
 import React from "react";
 import { useRouter } from "next/router";
-import Script from 'next/script'
+import Script from "next/script";
 
 import Head from "../components/Head";
 import Menu from "../components/Menu";

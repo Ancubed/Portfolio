@@ -12,6 +12,13 @@ const HeadWrapper: FunctionComponent = () => {
         content="Андрей Антонов. Fullstack-разработчик. Портфолио."
       />
       <link rel="icon" href="/favicon.ico" />
+
+      <meta property="og:title" content="Andrew Antonov" />
+      <meta property="og:description" content="Fullstack developer" />
+      <meta
+        property="og:image"
+        content="https://portfolio.ancubed.me/images/background.png"
+      />
     </Head>
   );
 };
