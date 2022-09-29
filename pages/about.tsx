@@ -55,8 +55,8 @@ const About: NextPage = ({ className }: DefaultProp) => {
             className="mt-[23px] text-sm font-light"
           >
             {enLang
-              ? "I’m node.js developer, well-versed in js, lead pet projects and enjoy development. I am sociable and find a common language. I can work both independently and in a team. Five on a five-point Googling scale. Diploma with honors."
-              : "Я node.js разработчик, хорошо разбираюсь в js, веду pet-проекты и получаю удовольствие от разработки. Я коммуникабелен и легко нахожу общий язык. Я могу работать как самостоятельно, так и в команде. Пять по пятибалльной шкале гуглинга. Диплом с отличием."}
+              ? "I’m fullstack developer, well-versed in js, lead pet projects and enjoy development. I am sociable and find a common language. I can work both independently and in a team. Five on a five-point Googling scale. Diploma with honors."
+              : "Я fullstack разработчик, хорошо разбираюсь в js, веду pet-проекты и получаю удовольствие от разработки. Я коммуникабелен и легко нахожу общий язык. Я могу работать как самостоятельно, так и в команде. Пять по пятибалльной шкале гуглинга. Диплом с отличием."}
           </animated.p>
         </div>
         <div className="my-10">
