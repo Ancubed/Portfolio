@@ -35,6 +35,7 @@ const distributeMessage = async (simpleId: string, message: string) => {
     );
     return result;
   } catch (err) {
+    console.log(message);
     console.error(err);
   }
 };
