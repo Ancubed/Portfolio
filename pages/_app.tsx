@@ -2,6 +2,7 @@ import "../styles/globals.css";
 
 import React from "react";
 import { useRouter } from "next/router";
+import Script from 'next/script'
 
 import Head from "../components/Head";
 import Menu from "../components/Menu";
@@ -52,7 +53,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Background pathname={router.pathname} screenSizeWidth={width} />
 
-      <script
+      <Script
         dangerouslySetInnerHTML={{
           __html: `(function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
                 m[i].l=1*new Date();
