@@ -1,7 +1,7 @@
 const portfolioWorks = [
   {
     id: 1,
-    href: "#",
+    href: "https://lib.osu.ru",
     title: "OSU Library",
     rusTitle: "Библиотека ОГУ",
     tags: ["Pug", "Express.js"],
@@ -12,7 +12,7 @@ const portfolioWorks = [
   },
   {
     id: 2,
-    href: "#",
+    href: "https://vk.com/app7536016",
     title: "OSU Schedule",
     rusTitle: "Расписание ОГУ",
     tags: ["Vk Miniapps", "React", "Express.js"],
