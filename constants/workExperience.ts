@@ -6,7 +6,7 @@ const workExperience = [
     place: "Sovcombank Technologies",
     rusPlace: "Совкомбанк Технологии",
     duration: "January, 2023 - Current",
-    rusDuration: "January, 2023 - Настоящее время",
+    rusDuration: "Январь, 2023 - Настоящее время",
     tasks: [
       {
         id: 1,
