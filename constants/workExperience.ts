@@ -1,13 +1,29 @@
 const workExperience = [
   {
     id: 1,
+    post: "Frontend developer",
+    rusPost: "Frontend разработчик",
+    place: "Sovcombank Technologies",
+    rusPlace: "Совкомбанк Технологии",
+    duration: "January, 2023 - Current",
+    rusDuration: "January, 2023 - Настоящее время",
+    tasks: [
+      {
+        id: 1,
+        eng: "Development of a corporate platform interface for interaction between technical support and users of the bank's services",
+        rus: "Разработка интерфейса корпоративной платформы для взаимодействия технической поддержки и пользователей сервисов банка",
+      }
+    ],
+  },
+  {
+    id: 2,
     post: "Chief Specialist in Automation of Library and Bibliographic Processes",
     rusPost:
       "Главный специалист по автоматизации библиотечно-библиографических процессов",
     place: "OSU Scientific Library",
     rusPlace: "Научная библиотека ОГУ",
-    duration: "July, 2022 - Current",
-    rusDuration: "Июль, 2022 - Настоящее время",
+    duration: "July, 2022 - January, 2023",
+    rusDuration: "Июль, 2022 - Январь, 2023",
     tasks: [
       {
         id: 1,
@@ -27,7 +43,7 @@ const workExperience = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     post: "Programmer",
     rusPost: "Программист",
     place: "OSU Scientific Library",
