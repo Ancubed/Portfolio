@@ -131,7 +131,7 @@ const Contact: NextPage = ({ className }: DefaultProp) => {
               <animated.button
                 style={inputSprings[4]}
                 type="submit"
-                className="mt-7 w-full border focus:outline-none cursor-pointer hover:animate-pulse relative overflow-x-hidden"
+                className="mt-7 w-full border focus:outline-none cursor-pointer hover:animate-pulse relative overflow-hidden"
               >
                 {enLang ? "Send" : "Отправить"}
               </animated.button>
