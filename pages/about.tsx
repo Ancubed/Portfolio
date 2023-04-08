@@ -48,7 +48,7 @@ const About: NextPage = ({ className }: DefaultProp) => {
             style={titlesSprings[0]}
             className="font-bold text-[32px] leading-[37px]"
           >
-            {enLang ? "Hi, I’m Andrey" : "Привет, я Андрей"}
+            {enLang ? "Hi, I’m Andrew" : "Привет, я Андрей"}
           </animated.h1>
           <animated.p
             style={titlesSprings[1]}
